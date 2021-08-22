@@ -1,0 +1,176 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.form-location{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 25px;
+  width: fit-content;
+  background-color: white;
+}
+
+.form-location ._1Lxpd {
+  width: auto;
+}
+
+._1Lxpd {
+
+  ._30Ipg {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    height: 50px;
+  }
+
+  ._1KMXW {
+    position: absolute;
+  }  
+
+}
+
+.form-location {
+  .MuiPaper-elevation1{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+
+.weather {
+  height: 40px;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.MuiAutocomplete-root {
+  width: 300px;
+}
+
+.input-base-city { 
+  width: 300px;
+}
+
+.temp-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.interval {
+  color: #92AFB6;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin-top: 40px;
+}
+
+.current-temp {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.week-temp {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.day-of-week-name { 
+  color: #92AFB6;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.day-temp {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 600px) {
+  .weather {
+    display: none;
+  }  
+
+  .MuiAutocomplete-root {
+    width: 130px;
+  }
+
+  .form-location{
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .App {
+    justify-content: flex-start;
+  }
+
+  .interval {
+    font-size: 20px;
+  }
+  
+  .current-temp {
+    font-size: 60px;
+  }
+
+  .day {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .day-of-week-name { 
+    font-size: 20px;
+  }
+  
+  .day-temp {
+    font-size: 25px;
+  }
+
+  .week-temp {
+    flex-wrap: wrap;
+  }
+  
+} 
